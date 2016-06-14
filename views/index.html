@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spider</title>
+</head>
+<body>
+  <table border="none" border-collapse="collapse">
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+    </tr>
+    <% data.forEach(function (item) { %>
+      <tr>
+        <td><%= item.title %></td>
+        <td><a href="<%= 'https://cnodejs.org' + item.href %>"><%= item.href %></a></td>
+      </tr>
+    <% }) %>
+
+  </table>
+
+</body>
+</html>
